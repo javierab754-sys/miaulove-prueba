@@ -1,0 +1,218 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+
+.contenedor {
+  display: flex;
+  min-height: 100vh;
+}
+
+
+.sidebar {
+  width: 220px;
+  background-color: #f7f7f7;
+  border-right: 1px solid #ccc;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.logo h2 {
+  font-size: 30px;
+  color: #333;
+}
+
+.icono-pata {
+  font-size: 22px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #555;
+  font-size: 14px;
+}
+
+.menu a:hover {
+  color: #68d2d6;
+  font-weight: bold;
+}
+
+.botones-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  margin-top: auto;
+  margin-bottom: 20px;
+}
+
+.btn-config, .btn-cerrar {
+  width: 90%;
+  padding: 8px;
+  border-radius: 8px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.btn-config {
+  background-color: #e0e0e0;
+  border: 1px solid #bbb;
+}
+
+.btn-cerrar {
+  background-color: #f8d7e3;
+  border: 1px solid #68d2d6;
+}
+
+.copyright {
+  font-size: 10px;
+  color: #888;
+}
+
+
+.contenido {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.topbar {
+  background-color:#68d2d6;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.btn-menu {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.buscador {
+  background-color: white;
+  border-radius: 20px;
+  padding: 4px 10px;
+  display: flex;
+  align-items: center;
+}
+
+.buscador input {
+  border: none;
+  outline: none;
+  font-size: 13px;
+}
+
+.btn-lupa {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+
+.principal {
+  padding: 30px;
+  text-align: center;
+}
+
+.principal h1 {
+  font-size: 22px;
+  margin-bottom: 25px;
+}
+
+
+.categorias {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.btn-categoria {
+  padding: 8px 25px;
+  border-radius: 20px;
+  border: 2px solid #68d2d6;
+  background-color: white;
+  color: black;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+
+.btn-categoria.activo {
+  background-color: #68d2d6;
+  color: white;
+}
+
+
+.galeria {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.tarjeta {
+  width: 170px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.caja-foto {
+  width: 100%;
+  height: 120px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.caja-foto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+.btn-like {
+  padding: 5px 20px;
+  border-radius: 20px;
+  border: 1.5px solid #68d2d6;
+  background-color: white;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.btn-like:hover {
+  background-color: #fdeef3;
+}

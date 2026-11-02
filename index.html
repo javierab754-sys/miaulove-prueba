@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>MiauLove</title>
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="contenedor">
+
+  
+    <div class="sidebar">
+      
+      
+      <div class="logo">
+        <h2>miau love</h2>
+        <span class="logo.png"></span>
+        <img src="img/logo.png" alt="Logo de MiauLove">
+      </div>
+
+      
+      <div class="menu">
+        <a href="#">Inicio</a>
+        <a href="#">Subir Imagen</a>
+        <a href="#">Contacto</a>
+        <a href="#">Favoritos</a>
+        <a href="#">Recientes</a>
+      </div>
+
+      
+      <div class="botones-sidebar">
+        <button class="btn-config">Configuración</button>
+       
+        <button class="btn-cerrar" onclick="cerrarSesion()">Cerrar Sesión</button>
+      </div>
+
+    
+      <p class="copyright">Todos los derechos reservados miaulove ®</p>
+    </div>
+
+    <div class="contenido">
+
+      <div class="topbar">
+        <button class="btn-menu">☰</button>
+        <div class="buscador">
+          <input type="text" placeholder="Buscar...">
+          <button class="btn-lupa">🔍</button>
+        </div>
+      </div>
+
+
+      <div class="principal">
+        
+     
+        <h1>¡vota por tu gato favorito!</h1>
+
+        <div class="categorias">
+          <button id="cat1" class="btn-categoria" onclick="cambiarColor('cat1')">Gatitos</button>
+          <button id="cat2" class="btn-categoria" onclick="cambiarColor('cat2')">Juveniles</button>
+          <button id="cat3" class="btn-categoria" onclick="cambiarColor('cat3')">Adultos</button>
+        </div>
+
+       
+        <div class="galeria">
+
+      
+          <div class="tarjeta">
+            <div class="caja-foto">
+              <img src="img/gato1.jpg" alt="Gatito 1">
+            </div>
+            <button class="btn-like" onclick="sumarLike('like1')">
+              <img src="img/like.png" alt="Icono de Me gusta">  <span id="like1">1</span>
+            </button>
+          </div>
+
+
+          <div class="tarjeta">
+            <div class="caja-foto">
+              <img src="img/gato2.jpg" alt="Gatito 2">
+            </div>
+            <button class="btn-like" onclick="sumarLike('like2')">
+              <img src="img/like.png" alt="Icono de Me gusta">  <span id="like2">2</span>
+            </button>
+          </div>
+
+       
+          <div class="tarjeta">
+            <div class="caja-foto">
+              <img src="img/gato3.png" alt="Gatito 3">
+            </div>
+            <button class="btn-like" onclick="sumarLike('like3')">
+              <img src="img/like.png" alt="Icono de Me gusta">   <span id="like3">4</span>
+            </button>
+          </div>
+
+          
+          <div class="tarjeta">
+            <div class="caja-foto">
+              <img src="img/gato4.png" alt="Gatito 4">
+            </div>
+            <button class="btn-like" onclick="sumarLike('like4')">
+               <img src="img/like.png" alt="Icono de Me gusta">  <span id="like4">6</span>
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
